@@ -211,8 +211,8 @@ void UOSSInteractiveAgentComponent::TickEyes(float DeltaTime)
 	if (!IsEnabled || !IsEyeTrackingEnabled())
 	{
 		// TODO : 엔진 레벨에서 수정된 코드 마이그레이션 필요 SetRelativeBoneTransform / EUserAtomDeltaType::Additive
-		//SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneLeft, FTransform::Identity, EUserAtomDeltaType::Additive);
-		//SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneRight, FTransform::Identity, EUserAtomDeltaType::Additive);
+		SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneLeft, FTransform::Identity, EUserAtomDeltaType::Additive);
+		SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneRight, FTransform::Identity, EUserAtomDeltaType::Additive);
 		return;
 	}
 
@@ -278,8 +278,8 @@ void UOSSInteractiveAgentComponent::TickEyes(float DeltaTime)
 
 	//set up the transforms
 	// TODO : 엔진 레벨에서 수정된 코드 마이그레이션 필요 SetRelativeBoneTransform / EUserAtomDeltaType::AdditiveToRefPose
-	//SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneLeft, EyeTransformLeft, EUserAtomDeltaType::AdditiveToRefPose);
-	//SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneRight, EyeTransformRight, EUserAtomDeltaType::AdditiveToRefPose);
+	SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneLeft, EyeTransformLeft, EUserAtomDeltaType::AdditiveToRefPose);
+	SkelMeshComponent->SetRelativeBoneTransform(EyeAimBoneRight, EyeTransformRight, EUserAtomDeltaType::AdditiveToRefPose);
 }
 
 void UOSSInteractiveAgentComponent::OnEnterNeck()
