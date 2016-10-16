@@ -1,0 +1,23 @@
+{
+	"FileVersion" : 1,	
+	"FriendlyName" : "OSS Shading",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Oculus Story Studio",
+	"CreatedByURL" : "http://oculus.com",
+	"EngineVersion" : "4.5.0",
+	"Description" : "Implements Shading nodes (Material Expression Nodes)",
+	"Category" : "Story.Shading",
+	"EnabledByDefault" : true,
+
+	"Modules" :
+	[
+		{
+			"Name" : "OSSShading",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PreDefault"
+		}
+	],
+
+	"CanContainContent" : false
+}

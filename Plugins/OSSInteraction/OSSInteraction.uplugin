@@ -1,0 +1,23 @@
+{
+	"FileVersion" : 1,	
+	"FriendlyName" : "OSS Interaction",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Oculus Story Studio",
+	"CreatedByURL" : "http://oculus.com",
+	"EngineVersion" : "4.5.0",
+	"Description" : "Library of components that are useful for interactive characters",
+	"Category" : "Story.Henry",
+	"EnabledByDefault" : true,
+
+	"Modules" :
+	[
+		{
+			"Name" : "OSSInteraction",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PostConfigInit"
+		}
+	],
+
+	"CanContainContent" : false
+}

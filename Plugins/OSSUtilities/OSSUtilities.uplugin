@@ -1,0 +1,24 @@
+{
+	"FileVersion" : 1,	
+	"FriendlyName" : "OSS Utilities",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Oculus Story Studio",
+	"CreatedByURL" : "http://oculus.com",
+	"EngineVersion" : "4.7.6",
+	"Description" : "Miscellaneous compilation of useful native functions.",
+	"Category" : "Story.Utilities",
+	"EnabledByDefault" : true,
+
+	"Modules" :
+	[
+		{
+			"Name" : "OSSUtilities",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PreLoadingScreen",
+			"WhitelistPlatforms" : [ "Win32", "Win64" ]
+		}
+	],
+
+	"CanContainContent" : false
+}
